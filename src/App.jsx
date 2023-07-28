@@ -6,7 +6,7 @@ import SearchTable from "./components/Search/search";
 const App = () => {
 
   const [searchTerm, setSearchTerm] = useState('');
-  const [notes, setNotes] = useState([])
+  const [notes, setNotes] = useState(JSON.parse(localStorage.getItem('react-notes-app-data')) || [])
 
   useEffect(() => {
     const savedNotes = JSON.parse(localStorage.getItem('react-notes-app-data'));

@@ -4,12 +4,13 @@ function SearchTable({ handleSearchTerm }) {
 
 
     return (
-        <div>
+        <div className='searchBox' >
             <input
                 type="text"
                 className='searchBox'
                 onChange={e => handleSearchTerm(e.target.value)}
                 placeholder="Search by title"
+
             />
 
         </div>
